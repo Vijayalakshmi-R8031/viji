@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Disease Prediction</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="prediction.js" defer></script>
+</head>
+<body>
+
+  <header>
+    <h1>AI Powered Disease Prediction System</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="prediction.html">Prediction</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="prediction-section">
+    <div class="content">
+      <h2>Enter Your Symptoms</h2>
+      <form id="predictionForm">
+        <label>Symptom 1:</label>
+        <input type="text" id="symptom1" placeholder="e.g., fever" required />
+        <label>Symptom 2:</label>
+        <input type="text" id="symptom2" placeholder="e.g., cough" />
+        <label>Symptom 3:</label>
+        <input type="text" id="symptom3" placeholder="e.g., headache" />
+        <button type="submit">Predict Disease</button>
+      </form>
+      <div id="result" class="result-box"></div>
+    </div>
+  </section>
+
+</body>
+</html>
