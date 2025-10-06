@@ -9,6 +9,7 @@
 </head>
 <body>
 
+  <!-- Header -->
   <header>
     <h1>AI Powered Disease Prediction System</h1>
     <nav>
@@ -21,16 +22,14 @@
     </nav>
   </header>
 
+  <!-- Prediction Section -->
   <section class="prediction-section">
     <div class="content">
       <h2>Enter Your Symptoms</h2>
       <form id="predictionForm">
-        <label>Symptom 1:</label>
-        <input type="text" id="symptom1" placeholder="e.g., fever" required />
-        <label>Symptom 2:</label>
-        <input type="text" id="symptom2" placeholder="e.g., cough" />
-        <label>Symptom 3:</label>
-        <input type="text" id="symptom3" placeholder="e.g., headache" />
+        <input type="text" id="symptom1" placeholder="Symptom 1 (e.g., fever)" required />
+        <input type="text" id="symptom2" placeholder="Symptom 2 (optional)" />
+        <input type="text" id="symptom3" placeholder="Symptom 3 (optional)" />
         <button type="submit">Predict Disease</button>
       </form>
       <div id="result" class="result-box"></div>
