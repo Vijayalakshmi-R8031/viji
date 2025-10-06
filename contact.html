@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact - AI Disease Prediction</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>AI Powered Disease Prediction System</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="prediction.html">Prediction</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Contact Section -->
+  <section class="contact-section">
+    <div class="content">
+      <h2>Contact Us</h2>
+      <form id="contactForm" onsubmit="return submitContact()">
+        <input type="text" id="name" placeholder="Your Name" required />
+        <input type="email" id="email" placeholder="Your Email" required />
+        <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+      <div id="contactResult" class="result-box"></div>
+    </div>
+  </section>
+
+  <script>
+    function submitContact() {
+      const name = document.getElementById("name").value;
+      const email = document.getElementById("email").value;
+      const message = document.getElementById("message").value;
+      const resultDiv = document.getElementById("contactResult");
+
+      if(name && email && message){
+        resultDiv.textContent = `Thank you ${name}, your message has been received! 💙`;
+        document.getElementById("contactForm").reset();
+      }
+      return false; // prevent form submission
+    }
+  </script>
+
+</body>
+</html>
