@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Powered Disease Prediction System</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <header>
+    <h1>AI Powered Disease Prediction System</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="prediction.html">Prediction</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="content">
+      <h2>Predict Diseases Early Using AI 🤖</h2>
+      <p>Our system helps identify possible diseases based on symptoms using machine learning. Stay safe and informed with our smart predictor!</p>
+      <a href="prediction.html" class="btn">Start Prediction</a>
+    </div>
+  </section>
+
+  <!-- Chatbot -->
+  <div class="chatbot-logo" onclick="toggleChat()">
+    💬
+  </div>
+
+  <div class="chat-box" id="chatBox">
+    <div class="chat-header">AI Assistant 💙</div>
+    <div class="chat-body" id="chatBody">
+      <p><strong>Bot:</strong> Hello! How can I help you today?</p>
+    </div>
+    <div class="chat-input">
+      <input type="text" id="userInput" placeholder="Type your message..." />
+      <button onclick="sendMessage()">Send</button>
+    </div>
+  </div>
+
+</body>
+</html>
